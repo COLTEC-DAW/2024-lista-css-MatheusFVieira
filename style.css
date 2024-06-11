@@ -1,0 +1,209 @@
+*{
+    font-family: sans-serif;  
+}
+
+header{
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(22, 61, 167);
+    color: white;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    float: left;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(62, 121, 231);
+    color: rgb(8, 8, 8);
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.intro{
+    height: 550px;
+}
+
+p{
+    margin: 1em;
+}
+
+#zen-summary{
+    text-align: center;
+}
+
+#zen-supporting p{
+    line-height: 1.5;
+}
+
+abbr{
+    font-family: small-caps;
+}
+
+#design-archives{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: green;
+}
+
+footer a{
+    flex-basis: 50px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 0.5em;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+.design-selection{
+    position: absolute;
+    top: 26%;
+    left:62%;
+    padding-inline: 2%;
+}
+
+a{
+    color: yellow;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: white;
+    color: blue;
+}
+
+a:visited{
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+.explanation p:first-of-type::first-letter{
+    font-size: 300%;
+    font-family: 'Brush Script MT', cursive;
+    float: left;
+}
+
+.design-selection li{
+    border-top: 1px solid white;
+}
+
+.design-selection li:last-child{
+    border-bottom: 1px solid white;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.benefits h3{
+    flex: 0 1 30%;
+    align-self: center;
+}
+
+.benefits p{
+    flex: 0 1 70%;
+    align-self: flex-start;
+}
+
+.participation{
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 1px solid white;
+}
+
+.participation h3{
+    flex: 0 1 50%;
+    align-self: center;
+}
+
+.participation p{
+    flex: 0 1 50%;
+    padding: 0.3em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .design-selection {
+        position: static;
+        top: auto;
+        left: auto;
+        padding-inline: 0;
+    }
+
+    .explanation {
+        border-right: none;
+        margin-right: 0;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+
+    .intro p, .benefits p, .participation p {
+        margin-top: 0;
+    }
+
+}
+
+
+@media print {
+
+    * {
+        font-family: Times, serif;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+    }
+}
