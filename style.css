@@ -165,3 +165,45 @@ a:visited{
     flex: 0 1 50%;
     padding: 0.3em;
 }
+
+@media screen and (max-width: 768px) {
+
+    .design-selection {
+        position: static;
+        top: auto;
+        left: auto;
+        padding-inline: 0;
+    }
+
+    .explanation {
+        border-right: none;
+        margin-right: 0;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+
+    .intro p, .benefits p, .participation p {
+        margin-top: 0;
+    }
+
+}
+
+
+@media print {
+
+    * {
+        font-family: Times, serif;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+    }
+}
